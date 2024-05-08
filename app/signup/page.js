@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import { useFormState, useFormStatus } from 'react-dom'
 
 import Image from "next/image";
-import { authenticate } from '@/app/lib/actions'
+// import { authenticate } from '@/app/lib/actions'
 
 function Login() {
-  const [errorMessage, dispatch] = useFormState(authenticate, undefined)
+  // const [errorMessage, dispatch] = useFormState(authenticate, undefined)
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,7 +42,8 @@ function Login() {
               Log in to your account
             </h1>
 
-            <form className="mt-6" action={dispatch}>
+            {/* <form className="mt-6" action={dispatch}> */}
+            <form className="mt-6">
               <>
                 <label className="block text-black dark:text-white">Email Address</label>
                 <input
